@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <title>Majid Malek's DI Flask Demo</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+                <!--<link rel=stylesheet type=text/css href='/static/style.css'>-->
+        </head>
+        <body>
+                <div class=page>
+                <div class=metanav>
+
+                        <h4>Please enter a stock ticker symbol (i.e. GOOG), and check desired features.</h4>
+
+                        <form id='input' method='post' action='index'>  
+                                <p>
+                                        Stock Ticker Symbol: <input type='text' name='ticker' />
+                                </p>
+                                <p>
+                                        Start Date YYYY-MM-DD: <input type='text' name='start_date' />
+                                </p>
+                                <p>
+                                        End Date YYYY-MM-DD: <input type='text' name='end_date' />
+                                </p>
+
+                                <p>
+                                        <input type='radio' name='features' value='adj_close' checked='checked'>Adjusted closing price<br>
+                                        <input type='radio' name='features' value='close'>Closing price<br>
+                                        <input type='radio' name='features' value='adj_open'>Adjusted opening price<br>
+                                        <input type='radio' name='features' value='open'>Opening price<br>              
+                                        <input type='radio' name='features' value='adj_volume'>Adjusted Volume<br>
+                                </p>
+
+                                <p>
+                                <input type="submit" value="Generate Chart">
+                                </p>
+                        </form>
+
+                </div>
+                </div>
+        </body>
+</html>
+
