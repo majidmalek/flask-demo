@@ -12,7 +12,7 @@ A [finished example](http://di-flask-demo.herokuapp.com/) demonstrates some basi
 - Git clone the existing repository.
 - Create Heroku application with `heroku create <app_name>` or leave blank to
   auto-generate a name.
-- 'heroku config:add BUILDPACK_URL=https://github.com/kennethreitz/conda-buildpack.git`
-- 'heroku config:add QUANDL_API_KEY=<your Quandl API key>'
+- heroku config:add BUILDPACK_URL=https://github.com/kennethreitz/conda-buildpack.git
+- heroku config:add QUANDL_API_KEY='your Quandl API key'
 - Deploy to Heroku: `git push heroku master`
 - You should be able to see your site at `https://<app_name>.herokuapp.com`
